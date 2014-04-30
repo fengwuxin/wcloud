@@ -1,0 +1,154 @@
+<include file='Public:header' />
+<!-- start: Page Title -->
+<div id="page-title">
+
+	<div id="page-title-inner">
+
+			<h2><{$title}></h2>
+
+	</div>	
+
+</div>
+<!-- end: Page Title -->
+
+<!-- start: Row -->
+<div class="row-fluid">		
+
+	<!-- start: Map -->
+	<div class="span9">
+
+		<!-- starts: Google Maps -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<div id="googlemaps">
+			<div id="map" class="google-map google-map-full"></div>
+		</div>
+		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script src="__PUBLIC__/js/jquery.gmap.min.js"></script>
+		<script type="text/javascript">
+			$('#map').gMap({
+				controls: {
+					panControl: false,
+					zoomControl: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					streetViewControl: false,
+					overviewMapControl: false
+				},
+				maptype: 'ROADMAP',
+				scrollwheel: true,
+				zoom: 13,
+				markers: [
+					{
+						address: 'San Francisco, United States', // Your Adress Here
+						html: '',
+						popup: false,
+					}
+
+				],
+
+			});
+		</script>
+		<!-- end: Google Maps -->
+
+	</div>
+	<!-- end: Map -->
+	
+	<div class="span3">
+		
+		<!-- start: Contact Info -->
+		<p>
+			<i class="mini-ico-home"></i> <b>creativeLabs</b>
+		</p>
+		<p>
+			<i class="mini-ico-map-marker"></i> 30 South Park Avenue
+		</p>
+		<p>	
+			<i class="mini-ico-map-marker"></i> San Francisco, CA 94108, USA
+		</p>	
+		<p>	
+			<i class="ico-zg-iphone"></i> Phone: (123) 456-7890
+		</p>
+		<p>	
+			<i class="mini-ico-print"></i> Fax: +08 (123) 456-7890
+		</p>
+		<p>
+			<i class="mini-ico-envelope"></i> Email: contact@companyname.com
+		</p>
+		<p>
+			<i class="mini-ico-globe"></i> Web: companyname.com
+		</p>	
+		<!-- end: Contact Info -->
+		
+		<!-- start: Social Sites -->
+		<ul class="social-bookmarks">
+			
+			<li class="facebook"><a href="">facebook</a></li>
+			<li class="github"><a href="#">github</a></li>
+			<li class="pinterest"><a href="#">pinterest</a></li>
+			<li class="twitter"><a href="#">twitter</a></li>
+			<li class="vimeo"><a href="#">vimeo</a></li>
+			<li class="youtube"><a href="#">youtube</a></li>
+			
+		</ul>
+		<!-- end: Social Sites -->
+	
+	</div>	
+
+</div>
+<!-- end: Row -->
+
+<!-- start: Row -->
+<div class="row-fluid">
+
+	<!-- start: Contact Form -->
+	<div class="span12">
+		
+		<div class="title"><h3>About Us</h3></div>
+		<p>
+			最初我想把这个博客做成自己记笔记的地方，就像现在用的evernote。但是比印象笔记好一点的就是可以让搜索引擎搜索到，然后变成大家寻找知识的宝库。
+			但是后来因为要做一个登陆注册模块，所以就在上面直接实验了。所以就有了现在的用户管理，个人中心，让所有访问到的朋友都可以注册一个属于自己的账号，拥有一个属于自己的天地。
+			今天听广播，偶尔听到了一个特别感人的故事。记录了一段北京爱情故事，想到是不是可以把这个博客做成情侣之间共同拥有的那种。当两个人确认了恋爱关系，就可以有机会来到这个网站开辟一块儿属于他们俩的天地。
+			虽然我没有谈过恋爱，没有过牵手，但是还是希望，那些幸福着的人儿能够永远得到幸福。
+			我想把他做成有声电台，让别人都可以听到他们的爱情故事，请注意，是听。就像我现在听的“左岸电台”。有相册，有视频，一点一滴，记录我们的“爱情”！
+		</p>
+	</div>
+
+</div>
+
+<!-- start: Row -->
+<div class="row-fluid">
+
+	<div class="span12">	
+
+		<!-- start: Contact Form -->
+		<div id="contact-form">
+
+			<form method="post" action="" />
+				
+				<fieldset>
+					
+					<input tabindex="4" id="name" name="name" type="text" value="" class="span4" placeholder="Name: ..." />
+					<input tabindex="2" id="email" name="email" type="text" value="" class="span4" placeholder="Email: ..." />
+					<input tabindex="3" id="www" name="www" type="text" value="" class="span4" placeholder="WWW: ..." />
+					<textarea tabindex="3" class="input-xlarge span12" id="message" name="body" rows="12" placeholder="Message: ..."></textarea>
+
+					<div class="actions">
+						<button tabindex="3" type="submit" class="btn btn-succes btn-large">Send message</button>
+					</div>
+					
+				</fieldset>
+
+			</form>
+
+		</div>
+		<!-- end: Contact Form -->
+		
+		</div>
+		<!-- end: Row -->
+
+	</div>
+	<!-- end: Contact Form -->
+	
+</div>
+<!-- end: Row -->
+<include file='Public:footer' />

@@ -1,0 +1,65 @@
+label {display: inline;}
+.uc{margin:60px auto 0;width:320px;min-height:200px;background-color: #fff;}
+.uc .icon {background-image: url(../images/login-bg.png);}
+.uc .box-uc{border:1px solid #DDDDDD;border-radius:4px 4px 4px 4px;box-shadow:0 0 15px 8px #E3E3E3;margin:0 auto;}
+.uc .box-uc .box-top{background:#323232;background:-moz-linear-gradient(top,#4d4d4d 0%,#2e2e2e 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#4d4d4d),color-stop(100%,#2e2e2e));background:-webkit-linear-gradient(top,#4d4d4d 0%,#2e2e2e 100%);background:-o-linear-gradient(top,#4d4d4d 0%,#2e2e2e 100%);background:-ms-linear-gradient(top,#4d4d4d 0%,#2e2e2e 100%);background:linear-gradient(to bottom,#4d4d4d 0%,#2e2e2e 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d',endColorstr='#2e2e2e',GradientType=0 );border-radius:4px 4px 0 0;overflow:hidden;height:36px;position:relative;border-bottom:1px solid #FFFFFF;}
+.uc .btn-blue{background-position:0px -41px;display:block;width:268px;height:39px;}
+.uc .btn-blue:hover{background-position:0px 0px;}
+.uc .btn-green{background-position:0px -123px;display:block;width:268px;height:39px;}
+.uc .btn-green:hover{background-position:0px -82px;outline:none;border:none}
+.uc .box-uc .box-top .logo{position:absolute;background:url(../images/favicon.png);display:block;text-indent:-9999px;width:23px;top:6px;left:12px;height:23px;}
+.uc .box-uc .box-top .text{display:block;text-indent:-9999px;width:115px;height:19px;position:absolute;left:42px;top:10px;}
+.uc .box-uc .box-top .text-active{background-position:-270px -25px;width:77px;}
+.uc .box-uc .box-top .text-change-email{background-position:-270px -116px;width:77px;}
+.uc .box-uc .box-top .text-sign{background-position:-270px -46px;}
+.uc .box-uc .box-top .text-login{background-position:-270px -67px;}
+.uc .box-uc .box-top .text-forgot{background-position:-270px -91px;}
+.uc .box-uc .box-top .home{position:absolute;background-position:-366px -25px;display:block;text-indent:-9999px;cursor:pointer;width:16px;height:13px;right:12px;top:11px}
+.uc .box-uc .box-top .home:hover{background-position:-348px -25px;}
+.uc .box-uc .box-body{overflow:hidden;border-top:1px solid #eaeaea;margin:0 25px;padding-top:14px;}
+.uc .box-uc .box-body ul li a {float:left; margin: 0 6px;width: 120px;height:25px;cursor:pointer;}
+#wb_connect_btn {background-image: url(../images/wb03.png);}
+#wb_connect_btn:hover {background-image: url(../images/wb04.png);}
+#qq_connect_btn {background-image: url(../images/qq03.png);}
+#qq_connect_btn:hover {background-image: url(../images/qq04.png);}
+.uc .box-uc .box-body label.shadow-box input[type="text"],.uc .box-uc .box-body input[type="password"]{border:1px solid #DEDEDE;border-radius:3px 3px 3px 3px;box-shadow:0 0 4px 0 #ECECEC inset;font-family:微软雅黑, 楷体;display:block;font-size:13px;height:20px;line-height:15px;margin:0 auto;overflow:hidden;padding:9px 23px 9px 5px;width:230px;}
+.uc .box-uc .box-body label.shadow-box{position:relative;background:none repeat scroll 0 0 #F7F7F7;border-radius:3px 3px 3px 3px;display:block;margin:17px 0 0;padding:4px;}
+.uc .box-uc .box-body label.hover input[type="text"],.uc .box-uc .box-body label.hover input[type="password"]{border:1px solid #cdcdcd;}
+.uc .box-uc .box-body label.hover{background-color:#f2f2f2;}
+.uc .box-uc .box-body label.focus input[type="text"],.uc .box-uc .box-body label.focus input[type="password"]{border:1px solid #cdcdcd;color:#333;}
+.uc .box-uc .box-body label.focus{background-color:#f2f2f2;}
+.uc .box-uc .box-body label.disabled input[type="text"],.uc .box-uc .box-body label.disabled input[type="password"]{cursor:default;color:#ccc;background-color:#F4F4F4;border:1px solid #EAEAEA;}
+.uc .box-uc .box-body label.disabled{background-color:#F7F7F7;cursor:default;}
+.uc .box-uc .captcha-box{overflow:hidden;margin-top:15px;}
+.uc .box-uc .captcha-box label.shadow-box{margin-top:0;float:left;width:140px;}
+.uc .box-uc .captcha-box label.shadow-box input[type="text"]{width:112px;}
+.uc .box-uc .overlabel{left:5px;position:absolute;top:10px;}
+.uc .box-uc .captcha-box .captcha-img img{float:right;width:106px;height:40px;cursor:pointer;}
+.uc .box-uc i.loading{display:none;height:16px;position:absolute;right:13px;top:13px;width:16px;background-image:url("../images/login-loading.gif");background-size:16px 16px;}
+.uc .box-uc i.pass{display:none;height:16px;position:absolute;right:13px;top:13px;width:16px;background-image:url("../images/login-pass.png");background-size:16px 16px;}
+.uc .box-uc .box-body .remember-box .remember-option{background-position:-383px -27px;font-size:13px;height:23px;padding-left:20px;}
+.uc .box-uc .box-body .remember-box .remember-option input{left:-9999px;position:absolute;}
+.uc .box-uc .box-body .remember-box .remember-option span{font-size:12px;}
+.uc .box-uc .box-body .remember-box .checked{background-position:-383px -47px;}
+.uc .box-uc .box-body .remember-box{margin:15px 0 0;font-size:12px;color:#646464;}
+.uc .box-uc .box-body .forget-password{margin-left:10px;color:#999;font-size:12px;}
+.uc .box-uc .box-body .message{display:none;border-radius:4px 4px 4px 4px;line-height:18px;padding:6px 10px 6px 15px;margin:15px 0;}
+.uc .box-uc .box-body .message a{cursor:pointer;}
+.uc .box-uc .box-body .tip{color:#666;background-color:#e6f5fa;}
+.uc .box-uc .box-body .warning{color:#666;background-color:#E1F4FB;}
+.uc .box-uc .box-body .error{color:#666;background-color:#fff4ca;}
+.uc .box-uc .box-body .submit-btn{font-family:微软雅黑, 宋体, Arial;padding:0;margin:15px auto 0;border:none;color:#FFFFFF;font-size:17px;text-shadow:0 0 2px #222222;cursor:pointer;}
+.uc .box-uc .box-body .submit-btn-disabled-backup{background-position:0px -298px;display:block;width:268px;height:39px;}
+.uc .box-forgot-password .box-body .submit-btn{margin-top:20px;}
+.uc .box-uc .box-body .status{display:none;}
+.uc .box-uc .box-body .status .email-changed{background-position:-3px -393px;}
+.uc .box-uc .box-body .status .status-img{height:24px;display:block;max-width:260px;text-indent:-9999px;margin:40px auto;}
+.uc .box-uc .box-body .status .sending{background-position:0px -239px;width:162px;}
+.uc .box-uc .box-body .status .invalid{background-position:0px -189px;width:178px;}
+.uc .box-uc .box-body .status .error{background-color:transparent;background-position:0px -214px;width:196px;}
+.uc .box-uc .box-body .status .success{background-position:0px -164px;width:186px;}
+.uc .box-uc .box-body .status .success-reg{background-position:0 -360px;width:156px;}
+.uc .box-uc .box-body .status .actived,.uc .box-uc .box-body .status .actived-login{background-position:-270px 0;width:186px;}.email-changed{background-position:;width:186px;}.uc .box-uc .box-body .status .done{background-position:0px -265px;width:134px;}.uc .box-uc .box-body .status-message{text-align:left;font-size:13px;line-height:22px;margin-bottom:25px;}
+.uc .box-uc .box-body .status-button{color:#FFFFFF;font-size:17px;letter-spacing:2px;line-height:39px;text-align:center;text-shadow:0 0 2px #222222;cursor:pointer;}
+.uc .box-uc .box-bottom{margin:20px 25px 25px 25px;color:#999;font-size:12px;}
+.uc .box-uc .box-bottom span{line-height:20px;}

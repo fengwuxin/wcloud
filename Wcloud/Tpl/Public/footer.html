@@ -1,0 +1,80 @@
+    </div>
+    <!-- end: Wrapper  -->          
+
+</div>
+<!--end: Container-->
+
+<!-- start: Container -->
+<div class="container">
+
+<!-- start: Under Footer -->
+<div id="under-footer">
+    
+    <!-- start: Row -->
+    <div class="row-fluid">
+
+        <!-- start: Under Footer Logo -->
+        <div class="span2">
+            <div id="under-footer-logo">
+                <a class="brand" href="__APP__">W<span>C</span>loud</a>
+            </div>
+        </div>
+        <!-- end: Under Footer Logo -->
+
+        <!-- start: Under Footer Copyright -->
+        <div class="span9">
+            
+            <div id="under-footer-copyright">
+                &copy; 2013, <a href="#">creativeLabs</a>. Designed by <a href="#">daiqingping</a> in BeiJing <img src="__PUBLIC__/img/poland.png" alt="Poland" style="margin-top:-4px" />
+            </div>
+            
+        </div>
+        <!-- end: Under Footer Copyright -->
+
+        <!-- start: Under Footer Back To Top -->
+<!--         <div class="span1">
+        
+    <div id="under-footer-back-to-top">
+        <a href="#"></a>
+    </div>
+
+</div> -->
+        <!-- end: Under Footer Back To Top -->
+    
+    </div>
+    <!-- end: Row -->
+<!-- back-to-top start -->
+<div id="all_top">
+    <span><a class="fhdb1" href="javascript:void(0);" title="点击返回顶部"></a></span>
+<!--     <span><a class="fhdb2 popup_upload" href="javascript:;"></a></span>
+    <span><a class="fhdb3" href="javascript:;"></a></span> -->
+</div>
+<script type="text/javascript">
+$(function(){
+    //返回顶部
+    $(window).scroll(function(){
+        var a = document.documentElement.scrollTop==0? document.body.clientHeight : document.documentElement.clientHeight;
+        var b = document.documentElement.scrollTop==0? document.body.scrollTop : document.documentElement.scrollTop;
+        var c = document.documentElement.scrollTop==0? document.body.scrollHeight : document.documentElement.scrollHeight;
+        
+        if(a+b > (c-150)){
+            $('#all_top').css({bottom:'250px'})
+            
+        }else{
+            $('#all_top').css({bottom:'50px'})
+        }
+        if($(document).scrollTop() >= 200){
+            $('#all_top').fadeIn(2000);
+            $('#baby_more').css('display','block');
+        }else{
+            $('#all_top').fadeOut();    
+        };  
+    
+    });
+    $('#all_top .fhdb1').click(function(){
+        $(document).scrollTop(0);   
+    }); 
+});    
+</script>
+<!-- back-to-top end -->    
+<include file='Public:common_footer' />

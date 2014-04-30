@@ -1,0 +1,67 @@
+<include file='Public:header' />
+<!-- start: Page Title -->
+<div id="page-title">
+
+	<div id="page-title-inner">
+
+			<h2><{$title}></h2>
+
+	</div>	
+
+</div>
+<!-- end: Page Title -->
+
+<!-- start: Row -->
+<div class="row-fluid">
+
+	<!-- start: Contact Form -->
+	<div class="span12">
+		
+		<div class="title"><h3>About Us</h3></div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+		</p>
+	
+	</div>
+
+</div>
+
+<!-- start: Row -->
+<div class="row-fluid">
+
+	<div class="span12">	
+		<!-- start: Beditor Form -->
+		<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+		<form id="form" action="" method='post'>
+			<span>博客类型：</span>
+			<select name="type">
+				<option value="1">技术类</option>
+				<option value="2">生活类</option>
+				<option value="3">旅行类</option>
+			</select>
+			<br />
+			<span>博客标题：</span><input type="text" name='title'>
+			<textarea type="text/plain" name="article" id="myEditor"></textarea>
+		</form>
+		<div class="actions">
+			<button onclick="document.getElementById('form').submit()" class="btn">发表博客</button>
+		</div>
+		<script type="text/javascript">
+		    var editor_a = UE.getEditor('myEditor',{initialFrameHeight:500});
+
+		    var doc=document,
+		        version=editor_a.options.imageUrl||"php",
+		        form = doc.getElementById("form");
+		        form.action="__URL__/do_add";
+
+		</script>
+		<!-- end: Beditor Form -->
+	</div>
+</div>	
+<!-- end: Row -->
+
+<include file='Public:footer' />

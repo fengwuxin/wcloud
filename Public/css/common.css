@@ -1,0 +1,25 @@
+﻿body {font-family: 微软雅黑, 楷体, 宋体; }
+p {text-indent: 2em; }
+a:hover{text-decoration: none; }
+.logo_title {font-size: 16px; font-family: MV Boli, Viner Hand ITC, Vivaldi; color:#fff; }
+.welcome {float:right; margin: 35px 10px 5px 0; min-width:100px; height:30px; }
+.welcome ul li {float:left; margin-left: 10px; color:#000; }
+.welcome ul li a {padding: 6px; color:#fff; }
+.welcome ul li a:hover {background-color: #000;border-radius: 5px; }
+
+.top_login {float:right; margin: 35px 30px 5px 0; min-width:100px; height:30px; }
+.top_login ul li {float:left; min-width:50px; height:30px; text-align: center; line-height: 30px; }
+.top_login ul li a{color:#fff; }
+.top_login ul li:hover {background-color: #000;border-radius: 5px; }
+/*操作按钮样式*/
+.container .command_icon {width:60px;position:fixed;right:30px;top:100px;}
+.container .command_icon ul li:hover{background-color: #000;border-radius: 5px;}
+
+/*返回顶部*/
+#all_top {bottom: 150px; display: none; height: 50px; position: fixed; right: 40px; width: 40px; }
+#all_top span {background-color:#BBBBBB; border-radius: 5px; display: block; height: 40px; margin-top: 10px; width: 40px; }
+#all_top span a {background: url("../images/top.png"); display: block; height: 40px; width: 40px; }
+#all_top span:hover {background-color: #000; }
+#all_top .fhdb1 {background-position: -2px -6px; }
+#all_top .fhdb2 {background-position: -2px -56px; }
+#all_top .fhdb3 {background-position: -2px -106px; }

@@ -1,0 +1,2 @@
+<?php die('forbidden'); ?>
+{"appid":"100568575","appkey":"77fc4205d1b7891e8130b1a566efc242","callback":"wcloud.sinaapp.com/index.php/Public/qq_callback","scope":"get_user_info","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}

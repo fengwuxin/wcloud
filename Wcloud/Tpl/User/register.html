@@ -1,0 +1,54 @@
+<include file='Public:common_header' />
+
+<div class="uc">
+  <div class="box-uc register box-register ">
+    <div class="box-top">
+      <a title="云淡风轻" href="__APP__" class="logo icon">云淡风轻</a>
+      <h1 class="text-sign text icon">用户注册</h1>
+      <a href="__APP__" title="返回首页" class="home icon">返回</a> 
+    </div>
+    <div class="box-body">
+      <div class="status">
+        <div class="sending status-img icon"></div>
+        <div class="status-message"></div>
+        <a data-url="" class="status-button btn-green icon" target="_blank">查看邮件</a>
+      </div>
+      <form>
+        <label class="shadow-box">
+          <input type="text" maxlength="128" placeholder="邮箱" class="name" autocomplete="off" tabindex="1" name="loginname"> <i class="loading"></i>
+        </label>
+        <label class="shadow-box">
+          <input type="text" maxlength="16" placeholder="昵称（2-16位，允许中文字符）" class="name" autocomplete="off" tabindex="2" name="user_name"> <i class="loading"></i>
+        </label>
+        <div class="tip message login-message"></div>
+        <label class="shadow-box">
+          <input type="password" maxlength="16" placeholder="密码（4-16位，区分大小写）" class="pass" autocomplete="off" tabindex="3" name="password">    
+          <i class="loading"></i>
+        </label>
+        <div class="captcha-box">
+          <label class="shadow-box">
+            <input type="text" id="verify" maxlength="4" placeholder="验证码（点击刷新）" autocomplete="off" class="pass" tabindex="4" name="captcha">    
+            <i class="loading"></i>
+          </label>
+          <div class="captcha-img">
+            <img src="__APP__/Public/verify" onClick="this.src=this.src+'?'+Math.random();verify.value=''"  title="点击刷新验证码" />
+          </div>
+        </div>
+        <div class="warning message">请输入密码</div>
+        <input id="for-register" class="submit-btn btn-blue icon" type="submit" tabindex="5" value="注 册">
+      </form>
+    </div>
+    <div class="box-bottom">
+      <span>
+        已有帐号？<a href="__URL__/login">点击登录</a>
+      </span>
+      <i class="loading"></i>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var _URL_ = "__URL__";
+</script>
+
+<include file='Public:common_footer' />

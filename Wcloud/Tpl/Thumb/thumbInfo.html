@@ -1,0 +1,43 @@
+<include file='Public:header' />
+<!-- start: Page Title -->
+<div id="page-title">
+
+	<div id="page-title-inner">
+
+		<h2><{$title}></h2>
+
+	</div>	
+
+</div>
+<!-- end: Page Title -->
+
+<!-- <div id="filters">
+	<ul class="option-set" data-option-key="filter">
+		<li><a href="#filter" class="selected" data-option-value="*">All</a></li>
+		<li>/</li>
+		<li><a href="#filter" data-option-value=".nature">Nature</a></li>
+		<li>/</li>
+		<li><a href="#filter" data-option-value=".people">People</a></li>
+		<li>/</li>
+		<li><a href="#filter" data-option-value=".scenery">Scenery</a></li>
+		<li>/</li>
+		<li><a href="#filter" data-option-value=".world">World</a></li>
+	</ul>
+</div> -->
+
+<!-- start: Portfolio -->
+<div id="portfolio-wrapper" class="row-fluid">
+	<foreach name='data' item='vo'>
+		<div class="span4 portfolio-item">
+			<div class="picture"><a target="_blank" href="__PUBLIC__/upload/<{$vo.filepath}><{$vo.filename}>" title="<{$vo.filetitle}>"><img src="__PUBLIC__/upload/<{$vo.filepath}><{$vo.filename}>" alt="<{$vo.filetitle}>" /><div class="image-overlay-link"></div></a>
+				<div class="item-description alt">
+					<h5><a href=""><{$vo.filetitle}></a></h5>
+					<p></p>
+				</div>
+			</div>	
+		</div>
+	</foreach>				
+</div>
+<!-- end: Portfolio -->
+			
+<include file='Public:footer' />

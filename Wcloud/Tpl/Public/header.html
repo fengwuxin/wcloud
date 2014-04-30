@@ -1,0 +1,84 @@
+<include file='Public:common_header' />
+            <!--start: Row -->
+            <div class="row-fluid">
+                    
+                <!--start: Navigation -->
+                <div class="navigation"> 
+                
+                    <div class="navbar navbar-inverse span9">
+                        <div class="navbar-inner">
+                            <a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
+                                menu
+                            </a>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="__APP__">首页</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">博客<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="__APP__/Blog/index">技术类</a></li>
+                                            <li><a href="__APP__/Blog/life">生活类</a></li>
+                                            <li><a href="__APP__/Blog/travel">旅行类</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">说说<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="__APP__/Feeling/index">一句话</a></li>
+                                            <li><a href="__APP__/Feeling/more">万千情</a></li>
+                                        </ul>
+                                    </li>                                   
+                                    <li><a href="__APP__/Message/index">留言板</a></li>
+                                    <li><a href="__APP__/Thumb/index">相册</a></li>
+                                    <li><a href="__APP__/About/index">关于我</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="search span3 hidden-tablet hidden-phone">
+                        
+                        <input type="text" name="search" />
+                    
+                    </div>
+                
+                </div>  
+                <!--end: Navigation --> 
+                    
+            </div>
+            <!--end: Row -->
+            
+        </div>
+        <!--end: Container-->           
+            
+    </header>
+    <!--end: Header-->
+    <php>
+        $uid = $_SESSION['member']['id'];
+    </php>
+    <{:W('UploadPhoto', array('app_name'=>'Wcloud', 'upload_btn'=>'popup_upload', 'uid'=>$uid))}>
+
+    <!--start: Container -->
+    <div class="container">
+        <!-- command icon start -->
+        <div class="command_icon">
+            <a href="javascript:void(0)" class="command"><img src="__PUBLIC__/icons/net-vibes.png" title="写点什么" alt="写点什么"></a>
+            <ul style="display:none;">
+                <li><a href="<{:U('Admin/index')}>"><img src="__PUBLIC__/icons/blogger.png" title="写博客" alt="写博客"></a></li>
+                <li><a href="<{:U('Feeling/index')}>"><img src="__PUBLIC__/icons/tech.png" title="写说说" alt="写说说"></a></li>
+                <li><a href="<{:U('Message/index')}>"><img src="__PUBLIC__/icons/gmail.png" title="写留言" alt="写留言"></a></li>
+                <li><a href="javascript:void(0)" class="popup_upload"><img src="__PUBLIC__/icons/vidderler.png" title="传照片" alt="传照片"></a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $('.command_icon').hover(function() {
+                    $(this).find('ul').css('display', 'block');
+                }, function() {
+                    $(this).find('ul').css('display', 'none');
+                });
+            });
+        </script>
+        <!-- command icon end -->
+        <!--start: Wrapper-->
+        <div id="wrapper">

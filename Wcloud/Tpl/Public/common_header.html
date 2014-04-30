@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- start: Meta -->
+    <meta charset="utf-8" />
+    <title><{$title}></title> 
+    <meta name="description" content="The clouds are pale and a light breeze is blowing" />
+    <meta name="keywords" content="clouds, Dai, DaiQingping, Ariel, html5, css3, Bootstrap" />
+    <meta name="author" content="DaiQingping" />
+    <!-- end: Meta -->
+	
+	<!-- sina weibo -->
+    <meta property="wb:webmaster" content="49a6a2a99ec3295d" />
+    <!-- QQ -->
+    <meta property="qc:admins" content="7155245674754631611006375" />
+
+	<!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- end: Mobile Specific -->
+    
+    <!-- start: Facebook Open Graph -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <!-- end: Facebook Open Graph -->
+
+    <!-- start: CSS -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic" />
+    <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet" />
+    <link href="__PUBLIC__/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet" />
+    <link href="__PUBLIC__/css/parallax-slider.css" rel="stylesheet" />
+    <link href="__PUBLIC__/css/common.css" rel="stylesheet" />
+    <foreach name='css' item='vo'>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/<{$vo}>.css" />
+    </foreach>
+    <script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2834852838" type="text/javascript" charset="utf-8"></script>
+    <!--[if lt IE 9 ]>
+      <link href="__PUBLIC__/css/styleIE.css" rel="stylesheet">
+    <![endif]-->
+    
+    <!--[if IE 9 ]>
+      <link href="__PUBLIC__/css/styleIE9.css" rel="stylesheet">
+    <![endif]-->
+    
+    <!-- end: CSS -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--start: Header -->
+    <header>
+        
+        <!--start: Container -->
+        <div class="container">
+            
+            <!--start: Row -->
+            <div class="row">
+                    
+                <!--start: Logo -->
+                <div class="logo span6">
+                    <a class="brand" href="__APP__"><img src="__PUBLIC__/img/logo.png" alt="logo" /></a>
+                    <div class="logo_title">The clouds are pale and a light breeze is blowing</div>    
+                </div>
+                <!--end: Logo -->
+                <if condition = "$Think.session.member.username neq '' OR $Think.cookie.username neq '' ">
+                    <div class="welcome">
+                        <ul>
+                            <li>欢迎你，<a href="__APP__/User/index/id/<{$_SESSION['member']['id'] ? $_SESSION['member']['id'] : $_COOKIE['wcloud_id']}>" title="点击进入个人中心"><{$_SESSION['member']['username'] ? $_SESSION['member']['username'] : $_COOKIE['wcloud_username'] | ucwords}></a></li>
+                            <li><a href="__APP__/User/logout" title="点击退出登录">退出</a></li>
+                        </ul>
+                    </div>
+                <else />
+                <!-- login start -->
+                <div class="top_login">
+                    <ul>
+                        <li><a href="__APP__/User/login" title="点击登录" >登录</a></li>
+                        <li><a href="__APP__/User/register" title="点击注册">注册</a></li>
+                    </ul>
+                </div>
+                <!-- login end -->
+                </if>
+            </div>
+            <!--end: Row -->

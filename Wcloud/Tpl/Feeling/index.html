@@ -1,0 +1,88 @@
+<include file='Public:header' />
+<!-- start: Page Title -->
+<div id="page-title">
+
+	<div id="page-title-inner">
+		<h2><{$title}></h2>
+	</div>	
+
+</div>
+<!-- end: Page Title -->
+
+<!-- start: Row -->
+<div class="row-fluid">
+
+	<div class="span12">	
+		<!-- start: Beditor Form -->
+		<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+		<form id="form" action="" method='post'>
+			<textarea type="text/plain" name="message" id="myEditor"></textarea>
+		</form>
+		<div class="actions">
+			<button onclick="document.getElementById('form').submit()" class="btn">发表心情</button>
+		</div>
+		<script type="text/javascript">
+		    var ueditor = UE.getEditor('myEditor',{initialFrameHeight:200});
+
+		    var doc=document,
+		        version=ueditor.options.imageUrl||"php",
+		        form = doc.getElementById("form");
+		        form.action="__URL__/do_add";
+		</script>
+		<!-- end: Beditor Form -->
+	</div>
+</div>	
+<!-- end: Row -->
+
+<!-- start: Row -->
+<div class="row-fluid">	
+	<!-- start: 12 Grids -->
+		<div class="span12">
+			<{$feeling[0]['message']}>
+		</div>
+		<div class="reply">
+			<span><a href="javascript:">回复</a></span>
+			<span><a href="javascript:">赞(<i>115</i>)</a></span>
+			<div class="reply_list">
+				
+			</div>
+			<form action="__URL__/reply" method="post" id="reply_form">
+				<input type="hidden" name="fid" value="<{$feeling[0]['id']}>">
+				<textarea name="reply_content" class="reply_content"></textarea>
+				<button onclick="document.getElementById('reply_form').submit()" class="btn">发表回复</button>
+			</form>
+		</div>
+	<!-- end: 12 Grids -->
+</div>	
+<!-- end: Row -->
+
+<!-- start: Row -->
+<div class="row-fluid">	
+	<!-- start: 2 Grids -->
+	<volist name='feeling' id='vo' offset='1' length='6'>
+		<div class="span2">
+			<{$vo.message}>
+			<div class="reply">
+				<span class="reply_btn"><a href="javascript:">回复</a></span>
+				<span><a href="javascript:">赞(<i>115</i>)</a></span>
+				<form action="__URL__/reply" id="reply_form_<{$i}>" class="reply_form">
+					<input type="text" name="reply_content" class="reply_content">
+					<button onclick="document.getElementById('reply_form_<{$i}>').submit()" class="btn">发表</button>
+				</form>
+			</div>
+		</div>
+	</volist>
+	<!-- end: 2 Grids -->
+</div>
+<!-- end: Row -->
+<include file='Public:footer' />
+<script type="text/javascript">
+    $(function() {
+    	$('.reply_btn').toggle(function() {
+    		$(this).parent().find('form').addClass('show');
+    	}, function() {
+    		$(this).parent().find('form').removeClass('show');
+    	});
+    });
+</script>

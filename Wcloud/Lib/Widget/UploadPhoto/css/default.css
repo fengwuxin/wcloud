@@ -1,0 +1,31 @@
+#swf_upload  {float:left;width:998px;height:485px;position: absolute;}
+#page_upload {width:898px;font-family: 微软雅黑, 宋体, Arial;position: fixed;padding:50px 30px; border: 1px solid #ccc;background:#fff; }
+#page_upload .btn_upload {float:left; width:44px; margin:15px 10px 0 ; padding: 50px 80px 99px; position: relative; border: 1px dashed #ccc; }
+#page_upload .btn_text {color:#9A9A9A; position: absolute; top:100px; left:72px; }
+#page_upload img {width:204px; height:153px;border-radius: 4px 4px 0 0;}
+#page_upload .image_box {max-height:480px; overflow: hidden; }
+#swf_form .swf_btn {margin:20px 408px 0;font-family: 微软雅黑, 宋体, Arial;background-color: #ccc}
+#swf_form .swf_btn:hover {background-color: #000}
+#swf_form #chooseThumb a {padding: 5px; margin:0 5px;display: inline-table;}
+#swf_form #chooseThumb a:hover {background-color: #000;color:#fff;border-radius: 5px;}
+
+#btn_close {width:18px; height:18px; cursor: pointer; position: absolute; top:25px; right:20px; background: url(../images/fc.png) -16px -243px; }
+
+/*创建图片框的样式*/
+#thumbnails a {margin:5px; }
+#thumbnails .swf_newDiv {height:193px;margin:10px 8px;float:left;position:relative;overflow: hidden;border:2px solid #fff;}
+#thumbnails .swf_newSpan {width:100px;height:50px;display:none;position:absolute;right:0;top:0;}
+#thumbnails .swf_newText {width:190px;height:30px;margin:0;border:1px solid #ccc;position:absolute;left:0;bottom:0px;font-family: 微软雅黑, 宋体 Arial;color:#9a9a9a;}
+#thumbnails .swf_cover {float: left; width:40px; height:40px; display: block; background: url(../images/fc.png) -16px -16px; }
+#thumbnails .swf_cover:hover {background: url(../images/fc.png) -16px -64px; }
+#thumbnails .cover {background: url(../images/fc.png) -16px -64px; }
+#thumbnails .swf_delete {float: left; width:40px; height:40px; display: block; background: url(../images/fc.png) -66px -16px; }
+#thumbnails .swf_delete:hover {background: url(../images/fc.png) -66px -64px; }
+
+/*信息提示框*/
+.swf_message {position:absolute;background-color: #fff; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 0 2px #ccc; float: left; height: 80px; padding: 20px; width: 240px; }
+.swf_message01 {background: url(../images/success.png) no-repeat 0 24px; height: 80px; width: 240px; }
+.swf_message02 {background: url(../images/error.png) no-repeat 0 24px; height: 80px; width: 240px; }
+.swf_message span {font-size: 26px; padding-left: 52px; width: 188px; line-height: 80px;}
+/*圆角*/
+.round {-moz-border-radius: 5px;      /* Gecko browsers */ -webkit-border-radius: 5px;   /* Webkit browsers */ border-radius:5px;            /* W3C syntax */ }

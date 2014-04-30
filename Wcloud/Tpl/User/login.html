@@ -1,0 +1,97 @@
+<include file='Public:common_header' />
+
+<div class="uc">
+    <div class="box-uc login box-login ">
+        <div class="box-top">
+            <a title="云淡风轻" href="__APP__" class="logo icon">云淡风轻</a>
+            <h1 class="text-login text icon">用户登录</h1>
+            <a href="__APP__" title="返回首页" class="home icon">返回</a>
+        </div>
+
+        <div class="box-body">
+
+            <div class="status">
+
+                <div class="sending status-img icon"></div>
+
+                <div class="status-message"></div>
+
+                <a data-url="<{$url}>" class="status-button btn-green icon" target="_blank">查看邮件</a>
+
+            </div>
+
+            <form>
+
+                <label class="shadow-box ">
+
+                    <input type="text" maxlength="128" placeholder="邮箱" class="name" tabindex="1" name="loginname" value = "<{$loginname}>"> <i class="loading"></i>
+
+                </label>
+
+                <div class="tip message login-message"></div>
+
+                <label class="shadow-box">
+
+                    <input type="password" maxlength="" placeholder="请输入密码" class="pass" tabindex="2" name="password"> <i class="loading"></i>
+
+                </label>
+
+                <div class="remember-box">
+
+                    <label class="remember-option icon">
+
+                        <input type="checkbox" autocomplete="off" value="" name="remember">
+
+                        <span>记住我两周</span>
+
+                        <input type="hidden" value="true" name="submit">
+                    </label>
+
+                    <a class="forget-password" href="__URL__/getpwd">
+
+                        <span>忘记密码?</span>
+
+                    </a>
+
+                </div>
+
+                <div class="warning message">请输入密码</div>
+
+                <input id="for-login" class="submit-btn btn-blue icon" type="submit" tabindex="3" value="登 录">
+            </form>
+            <div class="weibo_login">
+                <ul>
+                    <li><a id="wb_connect_btn" href="<{$code_url}>" title="点击使用微博登陆">&nbsp;</a></li>
+                    <li><a id="qq_connect_btn" href="__APP__/Public/openQQ" title="点击使用QQ登陆">&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box-bottom">
+
+            <span>
+
+                没有帐号？<a href="__URL__/register">点击注册</a>
+
+            </span>
+
+            <i class="loading"></i>
+        </div>
+    </div>
+</div>
+
+<include file='Public:common_footer' />
+<script type="text/javascript">
+    var _URL_ = "__URL__";
+
+    // var childWindow;
+    // function toQzoneLogin()
+    // {
+    //     childWindow = window.open("__APP__/Public/openQQ","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+    // } 
+    
+    // function closeChildWindow()
+    // {
+    //     childWindow.close();
+    // }
+</script>

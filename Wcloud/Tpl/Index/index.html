@@ -1,0 +1,259 @@
+<include file='Public:header' />
+	<!-- start: Slider -->
+	<div class="slider-wrapper">
+
+		<div id="da-slider" class="da-slider">
+			<div class="da-slide">
+				<h2></h2>
+				<p></p>
+				<a href="#" class="da-link"></a>
+				<div class="da-img" style="margin-left: -600px"><a target="_blank" href="__ROOT__/api/love/index.html"><img src="__PUBLIC__/images/love/love.jpg" alt="爱的告白" /></a></div>
+			</div>
+			<div class="da-slide">
+				<h2>爱的告白</h2>
+				<p>被风吹过的夏天</p>
+				<a target="_blank" href="__ROOT__/api/love/index.html" class="da-link">READ MORE</a>
+				<div class="da-img" style="margin-left: -100px"><a target="_blank" href="__ROOT__/api/love/index.html"><img src="__PUBLIC__/images/love/love1.jpg" alt="爱的告白" /></a></div>
+			</div>
+			<div class="da-slide">
+				<h2></h2>
+				<p></p>
+				<a target="_blank" href="#" class="da-link"></a>
+				<div class="da-img" style="margin-left: -680px"><a target="_blank" href="__ROOT__/api/love/index.html"><img src="__PUBLIC__/images/love/love2.jpg" alt="爱的告白" /></a></div>
+			</div>
+			<div class="da-slide">
+				<h2>想念你</h2>
+				<p>I MISS YOU</p>
+				<a target="_blank" href="__ROOT__/api/love/index.html" class="da-link">READ MORE</a>
+				<div class="da-img" style="margin-left: -200px"><a target="_blank" href="__ROOT__/api/love/index.html"><img src="__PUBLIC__/images/love/love3.jpg" alt="爱的告白" /></a></div>
+			</div>
+			<nav class="da-arrows">
+				<span class="da-arrows-prev"></span>
+				<span class="da-arrows-next"></span>
+			</nav>
+		</div>
+
+	</div>
+	<!-- end: Slider -->
+	
+	<hr class="clean" />
+	<div class="row-fluid">
+		<!-- 广告位：首页中部广告 -->
+		<script type="text/javascript" >BAIDU_CLB_SLOT_ID = "877527";</script>
+		<script type="text/javascript" src="http://cbjs.baidu.com/js/o.js"></script>
+	</div>
+	<!-- start: Row -->
+	<div class="row-fluid">
+		<foreach name='blog' item='vo'>
+				<div class="span3">
+		  			<div class="box">
+						<i class="fa-icon-resize-full"></i>
+						<h3><{$vo.title}></h3>
+						<h5><{$vo.username}></h5>
+						<p>
+							<{$vo.article}>
+						</p>
+						<div class="clear"></div>
+					</div>
+				</div>
+		</foreach>
+	</div>
+	<!-- end: Row -->
+	
+	<hr />
+	
+	<!-- start: Row -->
+		<div class="row-fluid">
+
+		<div class="span9">
+			
+			<div class="title-out"><h3>相册</h3></div>
+			
+			<!-- start: Row -->
+      		<div class="row-fluid">
+				<foreach name='thumb' item='vo'>
+				<div class="span4">
+					<div class="picture">
+						<a target="_blank" href="__APP__/Thumb/thumbInfo/id/<{$vo.thumbid}>" title="<{$vo.thumb}>">
+							<img src="__PUBLIC__/upload/<{$vo.filepath}><{$vo.filename}>" alt="<{$vo.thumb}>" />
+							<div class="image-overlay-zoom"></div>
+						</a>
+						<div class="item-description">
+							<h4><a href="__APP__/Thumb/thumbInfo/id/<{$vo.thumbid}>"><{$vo.thumb}></a></h4>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<hr class="visible-phone" />
+				</foreach>
+			</div>
+			<!-- end: Row -->
+
+		</div>
+		
+		<hr class="visible-phone" />
+
+		<div class="span3">
+			
+			<!-- start: List Style -->
+
+			<div class="title-out"><h3>Why graVis?</h3></div>
+			<ul class="check_list">
+				<li>Fully responsive so your content will always look good on any screen size</li>
+				<li>Awesome sliders give you the opportunity to showcase important content</li>
+				<li>Tested on iPhone and iPad with Retina Display</li>
+				<li>Multiple layout options for home pages, portfolio section & blog section</li>
+				<li>We offer very good support because we care about your site as much as you do.</li>
+				<li>Over 400 Icons .</li>
+			</ul>
+			<!-- end: List Style -->
+			
+		</div>
+
+		</div>
+	<!-- end: Row -->
+	
+	<hr />
+	
+	<!-- start: Row -->
+	<div class="row-fluid">
+
+		<div class="span4">
+			<div class="title-out"><h3>Blog</h3></div>
+			
+			<!-- start: Post -->
+			<div class="post">
+				<div class="info">
+					<span class="post-date">
+						<span class="day">1</span>
+						<span class="month-year">June, 2012</span>
+					</span>
+				</div>	
+				<div class="post-content">
+					<div class="post-title">
+						<h4><a href="post.html">Post title</a></h4>
+					</div>
+					<div class="post-description">
+						<p>
+							 
+						</p>
+					</div>
+					<a class="post-entry" href="post.html">Read More...</a>
+				</div>
+			</div>
+			<!-- end: Post -->
+			
+			<!-- start: Post -->
+			<div class="post">
+				<div class="info">
+					<span class="post-date">
+						<span class="day">1</span>
+						<span class="month-year">June, 2012</span>
+					</span>
+				</div>	
+				<div class="post-content">
+					<div class="post-title">
+						<h4><a href="post.html">Post title</a></h4>
+					</div>
+					<div class="post-description">
+						<p>
+							 
+						</p>
+					</div>
+					<a class="post-entry" href="post.html">Read More...</a>
+				</div>
+			</div>
+			<!-- end: Post -->
+				
+		</div>
+		
+		<div class="span4">
+			<div class="title-out"><h3>Investor News</h3></div>
+			
+			<!-- start: Post -->
+			<div class="post">
+				<div class="info">
+					<span class="post-date">
+						<span class="day">1</span>
+						<span class="month-year">June, 2012</span>
+					</span>
+				</div>	
+				<div class="post-content">
+					<div class="post-title">
+						<h4><a href="post.html">Post title</a></h4>
+					</div>
+					<div class="post-description">
+						<p>
+							 
+						</p>
+					</div>
+					<a class="post-entry" href="post.html">Read More...</a>
+				</div>
+			</div>
+			<!-- end: Post -->
+			
+			<!-- start: Post -->
+			<div class="post">
+				<div class="info">
+					<span class="post-date">
+						<span class="day">1</span>
+						<span class="month-year">June, 2012</span>
+					</span>
+				</div>	
+				<div class="post-content">
+					<div class="post-title">
+						<h4><a href="post.html">Post title</a></h4>
+					</div>
+					<div class="post-description">
+						<p>
+							 
+						</p>
+					</div>
+					<a class="post-entry" href="post.html">Read More...</a>
+				</div>
+			</div>
+			<!-- end: Post -->
+				
+		</div>	
+
+		<div class="span4">
+			<div class="title-out"><h3>Current Stock Price</h3></div>
+			<div id="stockPrice" class="center" style="height:286px"></div>
+		</div>	
+
+	</div>
+	<!-- end: Row -->
+	
+	<hr class="clean" />
+	
+	<!-- start: Row -->
+	<div class="contact row-fluid">
+	
+		<div class="span9">
+			<p>	
+				We really love beautiful design, creativeLabs Team.
+			</p>	
+		</div>
+		
+		<div class="span3">	
+			<button class="btn btn-success btn-large">Stay in touch!</button>
+		</div>
+	
+	</div>
+	<!-- end: Row -->		
+	
+	<hr class="clean" />
+			
+	<!-- start Clients List -->	
+	<div class="clients row-fluid">
+
+		<div class="client span2"><img src="__PUBLIC__/img/logos/1.png" alt="client" /></div>
+		<div class="client span2"><img src="__PUBLIC__/img/logos/2.png" alt="client" /></div>
+		<div class="client span2"><img src="__PUBLIC__/img/logos/3.png" alt="client" /></div>
+		<div class="client span2"><img src="__PUBLIC__/img/logos/10.png" alt="client" /></div>
+		<div class="client span2"><img src="__PUBLIC__/img/logos/9.png" alt="client" /></div>
+		<div class="client span2"><img src="__PUBLIC__/img/logos/6.png" alt="client" /></div>
+
+	</div>
+	<!-- end Clients List -->
+<include file='Public:footer' />
