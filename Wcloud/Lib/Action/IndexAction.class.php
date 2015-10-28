@@ -32,7 +32,7 @@ class IndexAction extends Action {
          ->select();
         $this->assign('blog', $blog);
         $this->assign('thumb', $thumb);
-        $this->assign('title', '云淡风轻 畅想生活');
+        $this->assign('title', '云淡风轻 畅想新生活');
         $this->assign('css', array('index'));
         $this->display();
     }
